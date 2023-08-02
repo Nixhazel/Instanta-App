@@ -6,8 +6,8 @@ const AdminLayout: FC<any> = (): ReactElement => {
 	const navigate = useNavigate()
 	// const {userInfo}  = useSelector((state: any) => state.userData)
 	const [componentActive, setComponentActive] = useState(false);
-	const data:any = localStorage.getItem('userdata');
-	const user = JSON.parse(data)
+	// const data:any = localStorage.getItem('userdata');
+	// const user = JSON.parse(data)
 
 	return (
 		<>
@@ -113,7 +113,8 @@ const AdminLayout: FC<any> = (): ReactElement => {
 							/>
 						</li>
 						<li>
-							<p className='block pl-1 py-2 '>{ user.userName}</p>
+							{/* <p className='block pl-1 py-2 '>{ user.userName}</p> */}
+							<p className='block pl-1 py-2 '>Admin</p>
 						</li>
 						<li>
 							<img src='arrow-right.svg' alt='' className=' cursor-pointer' />
